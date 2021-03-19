@@ -1,1 +1,54 @@
+@import "reset";
+@import "base";
 
+.grid-container {
+  display: grid;
+  grid:
+    "picture header" auto
+    "aside main" 1fr
+    / 350px auto;
+  min-height: 100vh;
+}
+
+header {
+  grid-area: header;
+  min-height: 30rem;
+  color: white;
+  text-align: center;
+  background: linear-gradient(to right, var(--primary), var(--light));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 6rem;
+    letter-spacing: 1.5rem;
+    font-weight: 300;
+  }
+  p {
+    letter-spacing: 0.5rem;
+  }
+}
+
+.picture {
+  grid: picture;
+  background: var(--background);
+  border-right: 1px solid var(--border);
+  img {
+    padding: 6rem;
+    border-radius: 50%;
+  }
+}
+
+aside {
+  grid-area: aside;
+  background: var(--background);
+  border-right: 1px solid var(--border);
+  padding: 6rem;
+}
+
+main {
+  grid-area: main;
+  background: white;
+}
