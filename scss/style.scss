@@ -46,6 +46,28 @@ aside {
   background: var(--background);
   border-right: 1px solid var(--border);
   padding: 6rem;
+  .bar-skill {
+    height: 5px;
+    background: var(--hint);
+    position: relative;
+    .bar-skill-progress {
+      position: absolute;
+      height: 5px;
+      top: 0;
+      left: 0;
+      width: 80%;
+      background: var(--light);
+    }
+    .bar-skill-dot {
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      background: var(--dark);
+      left: calc(80% - 7.5px);
+      top: -3.75px;
+      border-radius: 1rem;
+    }
+  }
 }
 
 main {
