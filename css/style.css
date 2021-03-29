@@ -39,6 +39,15 @@ img {
 .text-primary {
   color: var(--primary); }
 
+.text-hint {
+  color: var(--hint); }
+
+.mb-5 {
+  margin-bottom: 5rem !important; }
+
+.mb-2 {
+  margin-bottom: 2rem !important; }
+
 .grid-container {
   display: grid;
   grid: "picture header" auto "aside main" 1fr / 350px auto;
@@ -100,7 +109,38 @@ aside {
     aside .stars-container i {
       font-size: 2rem;
       margin: 0 1rem; }
+  aside .social-container {
+    display: flex;
+    justify-content: start;
+    align-items: center; }
+    aside .social-container i {
+      font-size: 2rem;
+      flex: 0 0 50px;
+      margin: 0; }
 
 main {
   grid-area: main;
-  background: white; }
+  background: white;
+  padding: 5rem; }
+  main h2 {
+    margin-bottom: 5rem; }
+  main p {
+    letter-spacing: 0.1rem;
+    line-height: 3rem; }
+  main .experience {
+    display: flex;
+    margin: 6rem 0; }
+    main .experience .timeline {
+      text-align: center;
+      color: var(--hint);
+      padding-right: 2rem;
+      border-right: 1px solid var(--border); }
+      main .experience .timeline p {
+        margin-top: 0; }
+    main .experience .content {
+      padding: 0 1rem; }
+      main .experience .content h3 {
+        margin: 0; }
+      main .experience .content ul {
+        list-style: circle;
+        padding-left: 4rem; }
